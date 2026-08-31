@@ -1,0 +1,531 @@
+{
+  "unicode_version": "17.0.0",
+  "skew": [
+    {
+      "id": "skew-lb20a-hy-after-space",
+      "input": "a -b",
+      "codepoints": "0061 0020 002D 0062",
+      "expected": [
+        [
+          2,
+          "Allowed"
+        ],
+        [
+          4,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB18",
+        "LB20a"
+      ]
+    },
+    {
+      "id": "skew-lb20a-hy-sot",
+      "input": "-b",
+      "codepoints": "002D 0062",
+      "expected": [
+        [
+          2,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB20a"
+      ]
+    },
+    {
+      "id": "skew-hh-2010-sot",
+      "input": "‐b",
+      "codepoints": "2010 0062",
+      "expected": [
+        [
+          4,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB20a"
+      ]
+    },
+    {
+      "id": "skew-lb21a-shy-uncovered",
+      "input": "א­a",
+      "codepoints": "05D0 00AD 0061",
+      "expected": [
+        [
+          4,
+          "Allowed"
+        ],
+        [
+          5,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB21",
+        "LB21a",
+        "LB31"
+      ]
+    },
+    {
+      "id": "skew-2e56-cl-to-cp",
+      "input": "x⹖y",
+      "codepoints": "0078 2E56 0079",
+      "expected": [
+        [
+          5,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB13",
+        "LB30"
+      ]
+    },
+    {
+      "id": "skew-lb1-sa-mn",
+      "input": "あั",
+      "codepoints": "3042 0E31",
+      "expected": [
+        [
+          6,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB1",
+        "LB9"
+      ]
+    },
+    {
+      "id": "skew-lb28a-ak-ak",
+      "input": "ᬅᬅ",
+      "codepoints": "1B05 1B05",
+      "expected": [
+        [
+          3,
+          "Allowed"
+        ],
+        [
+          6,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB28a",
+        "LB31"
+      ]
+    },
+    {
+      "id": "skew-lb28a-as-as",
+      "input": "ᯀᯀ",
+      "codepoints": "1BC0 1BC0",
+      "expected": [
+        [
+          3,
+          "Allowed"
+        ],
+        [
+          6,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB28a",
+        "LB31"
+      ]
+    },
+    {
+      "id": "skew-lb28a-ak-ak-vf",
+      "input": "ᬅᬅ᯳",
+      "codepoints": "1B05 1B05 1BF3",
+      "expected": [
+        [
+          9,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB28a"
+      ]
+    },
+    {
+      "id": "skew-lb28a-dotted-circle",
+      "input": "ᬅ◌",
+      "codepoints": "1B05 25CC",
+      "expected": [
+        [
+          3,
+          "Allowed"
+        ],
+        [
+          6,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB28a",
+        "LB31"
+      ]
+    },
+    {
+      "id": "skew-lb25-pr-op-al",
+      "input": "$(a",
+      "codepoints": "0024 0028 0061",
+      "expected": [
+        [
+          1,
+          "Allowed"
+        ],
+        [
+          3,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB25",
+        "LB31",
+        "LB14"
+      ]
+    },
+    {
+      "id": "skew-lb25-cp-po",
+      "input": "a)%",
+      "codepoints": "0061 0029 0025",
+      "expected": [
+        [
+          2,
+          "Allowed"
+        ],
+        [
+          3,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB25",
+        "LB13",
+        "LB31"
+      ]
+    },
+    {
+      "id": "skew-lb25-po-op-is-al",
+      "input": "%(.a",
+      "codepoints": "0025 0028 002E 0061",
+      "expected": [
+        [
+          1,
+          "Allowed"
+        ],
+        [
+          4,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB25",
+        "LB14",
+        "LB29"
+      ]
+    },
+    {
+      "id": "skew-lb15c",
+      "input": "subtract .5",
+      "codepoints": "0073 0075 0062 0074 0072 0061 0063 0074 0020 002E 0035",
+      "expected": [
+        [
+          9,
+          "Allowed"
+        ],
+        [
+          11,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB15c",
+        "LB25"
+      ]
+    },
+    {
+      "id": "skew-lb15a-qu-sp",
+      "input": "a “ b",
+      "codepoints": "0061 0020 201C 0020 0062",
+      "expected": [
+        [
+          2,
+          "Allowed"
+        ],
+        [
+          7,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB18",
+        "LB15a"
+      ]
+    },
+    {
+      "id": "skew-lb15b-qu-sp",
+      "input": "a ” b",
+      "codepoints": "0061 0020 201D 0020 0062",
+      "expected": [
+        [
+          6,
+          "Allowed"
+        ],
+        [
+          7,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB15b",
+        "LB18"
+      ]
+    },
+    {
+      "id": "skew-lb15b-file-sample",
+      "input": "❗ »",
+      "codepoints": "2757 0020 00BB",
+      "expected": [
+        [
+          6,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB15b"
+      ]
+    },
+    {
+      "id": "skew-lb19a-ea-quote",
+      "input": "日“本",
+      "codepoints": "65E5 201C 672C",
+      "expected": [
+        [
+          3,
+          "Allowed"
+        ],
+        [
+          9,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB19",
+        "LB19a"
+      ]
+    },
+    {
+      "id": "skew-lb30-ea-op",
+      "input": "x「y」",
+      "codepoints": "0078 300C 0079 300D",
+      "expected": [
+        [
+          1,
+          "Allowed"
+        ],
+        [
+          8,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB30",
+        "LB31",
+        "LB14",
+        "LB13"
+      ]
+    },
+    {
+      "id": "skew-xx-1f8ff",
+      "input": "❗🣿",
+      "codepoints": "2757 1F8FF",
+      "expected": [
+        [
+          7,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB1",
+        "LB28"
+      ]
+    },
+    {
+      "id": "skew-lb30b-extpict-cn",
+      "input": "🀬🏿",
+      "codepoints": "1F02C 1F3FF",
+      "expected": [
+        [
+          8,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB30b"
+      ]
+    },
+    {
+      "id": "skew-new-nu-garay",
+      "input": "1/𐵀",
+      "codepoints": "0031 002F 10D40",
+      "expected": [
+        [
+          6,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB25"
+      ]
+    },
+    {
+      "id": "skew-new-cm-17",
+      "input": "あ᫠",
+      "codepoints": "3042 1AE0",
+      "expected": [
+        [
+          6,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB9"
+      ]
+    },
+    {
+      "id": "skew-fe20-gl",
+      "input": "a︠あ",
+      "codepoints": "0061 FE20 3042",
+      "expected": [
+        [
+          7,
+          "Mandatory"
+        ]
+      ],
+      "rules": [
+        "LB12"
+      ]
+    }
+  ],
+  "split_at_safe": [
+    {
+      "id": "split-op-sp",
+      "input": "[ ab",
+      "codepoints": "005B 0020 0061 0062",
+      "expected_prev_len": 3
+    },
+    {
+      "id": "split-op-sp-paren",
+      "input": "( ab",
+      "codepoints": "0028 0020 0061 0062",
+      "expected_prev_len": 3
+    },
+    {
+      "id": "split-b2-sp",
+      "input": "a— —b",
+      "codepoints": "0061 2014 0020 2014 0062",
+      "expected_prev_len": 8
+    },
+    {
+      "id": "split-cm-base",
+      "input": "!́$b",
+      "codepoints": "0021 0301 0024 0062",
+      "expected_prev_len": 4
+    },
+    {
+      "id": "split-qu-sp",
+      "input": "“ ab",
+      "codepoints": "201C 0020 0061 0062",
+      "expected_prev_len": 5
+    },
+    {
+      "id": "split-cl-sp-ns",
+      "input": "] ーa",
+      "codepoints": "005D 0020 30FC 0061",
+      "expected_prev_len": 5
+    },
+    {
+      "id": "split-zw-sp",
+      "input": "a​ b",
+      "codepoints": "0061 200B 0020 0062",
+      "expected_prev_len": 5
+    },
+    {
+      "id": "split-hl-hy-al",
+      "input": "א-ab",
+      "codepoints": "05D0 002D 0061 0062",
+      "expected_prev_len": 4
+    },
+    {
+      "id": "split-trailing-cm",
+      "input": "á́",
+      "codepoints": "0061 0301 0301",
+      "expected_prev_len": 0
+    },
+    {
+      "id": "split-ri-run",
+      "input": "🇫🇷🇩🇪",
+      "codepoints": "1F1EB 1F1F7 1F1E9 1F1EA",
+      "expected_prev_len": 0
+    },
+    {
+      "id": "split-issue6-testing",
+      "input": "testing",
+      "codepoints": "0074 0065 0073 0074 0069 006E 0067",
+      "expected_prev_len": 6
+    },
+    {
+      "id": "split-issue6-digits",
+      "input": "4321",
+      "codepoints": "0034 0033 0032 0031",
+      "expected_prev_len": 3
+    },
+    {
+      "id": "split-issue6-sentence",
+      "input": "a longer sentence 987654321",
+      "codepoints": "0061 0020 006C 006F 006E 0067 0065 0072 0020 0073 0065 006E 0074 0065 006E 0063 0065 0020 0039 0038 0037 0036 0035 0034 0033 0032 0031",
+      "expected_prev_len": 26
+    },
+    {
+      "id": "split-trailing-spaces",
+      "input": "ab  ",
+      "codepoints": "0061 0062 0020 0020",
+      "expected_prev_len": 1
+    },
+    {
+      "id": "split-word-space-tail",
+      "input": "a b ",
+      "codepoints": "0061 0020 0062 0020",
+      "expected_prev_len": 2
+    },
+    {
+      "id": "split-nbsp-tail",
+      "input": "a ",
+      "codepoints": "0061 00A0",
+      "expected_prev_len": 1
+    },
+    {
+      "id": "split-crlf",
+      "input": "a\r\n",
+      "codepoints": "0061 000D 000A",
+      "expected_prev_len": 2
+    },
+    {
+      "id": "split-empty",
+      "input": "",
+      "codepoints": "",
+      "expected_prev_len": 0
+    },
+    {
+      "id": "split-single",
+      "input": "a",
+      "codepoints": "0061",
+      "expected_prev_len": 0
+    }
+  ]
+}

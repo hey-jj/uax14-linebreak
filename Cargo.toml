@@ -1,0 +1,16 @@
+[package]
+name = "uax14-linebreak"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.56"
+authors = ["Justin Jones <hey.jones@icloud.com>"]
+license = "MIT AND Unicode-3.0"
+description = "Unicode 17 line break opportunities for strings and character iterators"
+keywords = ["unicode", "line-breaking", "text", "no-std", "uax14"]
+categories = ["no-std", "text-processing", "internationalization"]
+readme = "README.md"
+repository = "https://github.com/hey-jj/uax14-linebreak"
+documentation = "https://docs.rs/uax14-linebreak"
+exclude = ["Cargo.lock", "gen/", "tools/", "fuzz/"]
+
+[dependencies]

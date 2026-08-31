@@ -1,0 +1,1 @@
+/Users/justinjones/Developer/workflows/crate-publish-2026-06/vet3/audit/build4/unicode-linebreak/crate/gen/target/release/uax14-table-builder: /Users/justinjones/Developer/workflows/crate-publish-2026-06/vet3/audit/build4/unicode-linebreak/crate/gen/src/main.rs

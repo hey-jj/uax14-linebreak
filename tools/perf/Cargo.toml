@@ -1,0 +1,10 @@
+[package]
+name = "uax14-perf-check"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[dependencies]
+uax14-linebreak = { path = "../.." }
